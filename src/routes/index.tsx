@@ -1,26 +1,42 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
-import { baseOptions } from '@/lib/layout.shared';
+import { createFileRoute } from "@tanstack/react-router";
+import { DeviceMockup } from "@/components/landing/DeviceMockup";
+import { Header } from "@/components/landing/Header";
+import { Hero } from "@/components/landing/Hero";
 
-export const Route = createFileRoute('/')({
+export const Route = createFileRoute("/")({
   component: Home,
 });
 
 function Home() {
   return (
-    <HomeLayout {...baseOptions()}>
-      <div className="flex flex-col items-center justify-center text-center flex-1">
-        <h1 className="font-medium text-xl mb-4">Fumadocs on Tanstack Start.</h1>
-        <Link
-          to="/docs/$"
-          params={{
-            _splat: '',
-          }}
-          className="px-3 py-2 rounded-lg bg-fd-primary text-fd-primary-foreground font-medium text-sm mx-auto"
-        >
-          Open Docs
-        </Link>
-      </div>
-    </HomeLayout>
+    <div className="relative min-h-screen w-full overflow-hidden bg-black">
+      <div
+        id="landing"
+        className="absolute top-0 left-0 w-full h-screen bg-linear-to-b from-white via-transparent to-black opacity-80"
+      ></div>
+      <Header />
+      <main className="relative">
+        <Hero />
+        <DeviceMockup />
+        <div className="text-white">
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+          <p>Here is some more content</p>
+        </div>
+      </main>
+    </div>
   );
 }
