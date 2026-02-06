@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown } from "lucide-react";
 import { DeviceMockup } from "@/components/landing/DeviceMockup";
+import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/Header";
 import { content } from "@/lib/content";
 
@@ -59,6 +60,7 @@ function Home() {
         <DeviceMockup />
       </div>
       <div className="w-full h-screen bg-black relative after:absolute  after:w-full after:bg-linear-to-b after:from-white/00 after:via-black/10 after:to-black after:h-40 after:-top-20 -z-10"></div>
+      <Footer />
     </>
   );
 }

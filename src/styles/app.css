@@ -106,3 +106,12 @@ body {
   filter: blur(8.5px);
   border-radius: 70px;
 }
+
+#anchor {
+  anchor-name: --footer;
+}
+
+#x {
+  position: absolute;
+  position-anchor: --footer;
+}
