@@ -41,9 +41,7 @@ function Home() {
             <div className="px-20">
               <a id="f1" className="block" href={content.header.download.url}>
                 <div id="f2"></div>
-                <div id="ftext">
-                  {content.landing.downloadButton}
-                </div>
+                <div id="ftext">{content.landing.downloadButton}</div>
                 <div id="f3"></div>
               </a>
             </div>
