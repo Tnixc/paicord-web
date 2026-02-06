@@ -18,10 +18,10 @@ export default defineConfig({
     }),
     tanstackStart({
       spa: {
-        enabled: true,
+        enabled: false,
         prerender: {
           outputPath: "index.html",
-          enabled: true,
+          enabled: false,
           crawlLinks: true,
         },
       },
