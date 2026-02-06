@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DeviceMockup } from "@/components/landing/DeviceMockup";
 import { Header } from "@/components/landing/Header";
-import { Hero } from "@/components/landing/Hero";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Home,
