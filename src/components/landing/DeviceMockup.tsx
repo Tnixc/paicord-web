@@ -9,7 +9,7 @@ export function DeviceMockup() {
       <img
         src="/phone.webp"
         alt="Paicord Mobile Application"
-        className="absolute max-w-sm top-1/2 -translate-y-1/4 right-12 block -z-10 max-h-200"
+        className="absolute max-w-sm top-1/2 -translate-y-1/4 right-12 block -z-10 max-h-200 drop-shadow-2xl pb-20"
       />
     </>
   );

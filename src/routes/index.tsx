@@ -53,7 +53,7 @@ function Home() {
         </div>
         <DeviceMockup />
       </div>
-      <div className="w-full h-screen bg-black relative after:absolute  after:w-full after:bg-linear-to-b after:from-transparent after:via-black after:to-black after:h-40 after:-top-20 -z-10">
+      <div className="w-full h-screen bg-black relative after:absolute  after:w-full after:bg-linear-to-b after:from-white/00 after:via-black/10 after:to-black after:h-40 after:-top-20 -z-10">
         
       </div>
 
