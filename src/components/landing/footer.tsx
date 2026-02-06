@@ -4,6 +4,7 @@ import {
   Github,
   HeartHandshake,
 } from "lucide-react";
+import { content } from "@/lib/content";
 
 const SVGComponent = () => (
   <svg
@@ -980,40 +981,52 @@ export function Footer() {
     <footer className="w-full flex items-center justify-center py-20 bg-black">
       <div className="-translate-y-22 -translate-x-2" id="x">
         <div className="inline-flex flex-col justify-start items-start gap-3 tracking-tighter">
-          <div className="pl-1.5 pr-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden">
+          <a
+            href={content.footer.issue.url}
+            className="pl-1.5 pr-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+          >
             <div data-svg-wrapper className="relative">
               <CircleDotDashed />
             </div>
             <div className="justify-start text-black text-2xl font-normal ">
-              Open an Issue
+              {content.footer.issue.label}
             </div>
-          </div>
+          </a>
           <div className="self-stretch inline-flex justify-start items-center gap-3">
-            <div className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden">
+            <a
+              href={content.footer.sponsor.url}
+              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+            >
               <div data-svg-wrapper className="relative">
                 <HeartHandshake />
               </div>
               <div className="justify-start text-black text-2xl font-normal ">
-                Sponsor
+                {content.footer.sponsor.label}
               </div>
-            </div>
-            <div className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden">
+            </a>
+            <a
+              href={content.footer.github.url}
+              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+            >
               <div data-svg-wrapper className="relative">
                 <Github />
               </div>
               <div className="justify-start text-black text-2xl font-normal ">
-                GitHub
+                {content.footer.github.label}
               </div>
-            </div>
+            </a>
           </div>
-          <div className="px-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden">
+          <a
+            href={content.footer.download.url}
+            className="px-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+          >
             <div data-svg-wrapper className="relative">
               <ArrowDownToLine />
             </div>
             <div className="justify-start text-black text-2xl font-normal ">
-              Download
+              {content.footer.download.label}
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <SVGComponent />

@@ -53,4 +53,22 @@ export const content = {
   ariaLabels: {
     copyCommand: "Copy install command",
   },
+  footer: {
+    issue: {
+      label: "Open an Issue",
+      url: "https://github.com/llsc12/paicord/issues/new",
+    },
+    sponsor: {
+      label: "Sponsor",
+      url: "https://github.com/sponsors/llsc12",
+    },
+    github: {
+      label: "GitHub",
+      url: "https://github.com/llsc12/paicord",
+    },
+    download: {
+      label: "Download",
+      url: "https://nightly.link/llsc12/Paicord/workflows/build/main/Paicord-macOS.zip",
+    },
+  },
 } as const;
