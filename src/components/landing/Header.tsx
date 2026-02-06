@@ -1,31 +1,35 @@
+import { content } from "@/lib/content";
+
 export function Header() {
   return (
-    <nav className="p-7 flex justify-between items-center text-sm">
+    <nav className="p-7 flex justify-between items-center text-sm font-light">
       <div className="flex items-center gap-2.5">
         <a
-          className="underline underline-offset-3 decoration-1"
-          href="https://github.com/llsc12/paicord"
+          className="underline underline-offset-3 hover:underline-offset-6 ease-in-out transition-all decoration-1"
+          href={content.header.github.url}
         >
-          GitHub
+          {content.header.github.label}
         </a>
-        <span className="text-white/80">201 stars</span>
+        <span className="text-white/50">{content.header.github.stars}</span>
       </div>
       <div className="flex items-center gap-7">
         <a
-          className="underline underline-offset-3 decoration-1"
-          href="https://github.com/sponsors/llsc12"
+          className="underline underline-offset-3 hover:underline-offset-6 ease-in-out transition-all decoration-1"
+          href={content.header.sponsor.url}
         >
-          Sponsor
-        </a>
-        <a className="underline underline-offset-3 decoration-1" href="/docs">
-          Docs
+          {content.header.sponsor.label}
         </a>
         <a
-          className="underline underline-offset-3 decoration-1"
-          href="https://nightly.link/llsc12/Paicord/workflows/build/main/Paicord-macOS.zip
-"
+          className="underline underline-offset-3 hover:underline-offset-6 ease-in-out transition-all decoration-1"
+          href={content.header.docs.url}
         >
-          Download
+          {content.header.docs.label}
+        </a>
+        <a
+          className="underline underline-offset-3 hover:underline-offset-6 ease-in-out transition-all decoration-1"
+          href={content.header.download.url}
+        >
+          {content.header.download.label}
         </a>
       </div>
     </nav>

@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown } from "lucide-react";
 import { DeviceMockup } from "@/components/landing/DeviceMockup";
 import { Header } from "@/components/landing/Header";
+import { content } from "@/lib/content";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -19,44 +20,47 @@ function Home() {
           <Header />
           <div className="space-y-20">
             <div className="justify-start px-20 text-3xl leading-10">
-              <span className="text-white">Paicord</span>
+              <span className="text-white">{content.landing.title}</span>
               <span className="text-white/80 font-extralight">
                 {" "}
-                is a brand new{" "}
+                {content.landing.description.part1}
               </span>
-              <span className="text-white">open source</span>
-              <span className="text-white/80 font-extralight">
-                , cross-platform, native{" "}
+              <span className="text-white">
+                {content.landing.description.highlight1}
               </span>
-              <span className="text-white">discord client </span>
               <span className="text-white/80 font-extralight">
-                written in SwiftUI
+                {content.landing.description.part2}
+              </span>
+              <span className="text-white">
+                {content.landing.description.highlight2}
+              </span>
+              <span className="text-white/80 font-extralight">
+                {content.landing.description.part3}
               </span>
             </div>
             <div className="px-20">
-              <div id="f1">
+              <a id="f1" className="block" href={content.header.download.url}>
                 <div id="f2"></div>
-                <a id="ftext">Download</a>
+                <div id="ftext">
+                  {content.landing.downloadButton}
+                </div>
                 <div id="f3"></div>
-              </div>
+              </a>
             </div>
           </div>
           <img
-            src="/phone.webp"
-            alt="Paicord Mobile Application"
+            src={content.images.mobile.src}
+            alt={content.images.mobile.alt}
             className="sm:hidden block max-w-xs mx-auto"
           />
           <div className="w-full pb-10 flex items-center justify-center text-white gap-2 opacity-80 text-sm">
             <ArrowDown width={18} />
-            Features
+            {content.landing.features}
           </div>
         </div>
         <DeviceMockup />
       </div>
-      <div className="w-full h-screen bg-black relative after:absolute  after:w-full after:bg-linear-to-b after:from-white/00 after:via-black/10 after:to-black after:h-40 after:-top-20 -z-10">
-        
-      </div>
-
+      <div className="w-full h-screen bg-black relative after:absolute  after:w-full after:bg-linear-to-b after:from-white/00 after:via-black/10 after:to-black after:h-40 after:-top-20 -z-10"></div>
     </>
   );
 }
