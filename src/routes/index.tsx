@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { ArrowDown } from "lucide-react";
 import { DeviceMockup } from "@/components/landing/DeviceMockup";
 import { Header } from "@/components/landing/Header";
-import { ArrowDown } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -15,7 +15,7 @@ function Home() {
         className="fixed top-0 left-0 w-full h-screen bg-linear-to-b from-white via-transparent to-black opacity-80 -z-10"
       ></div>
       <div className="flex text-white">
-        <div className="w-2xl flex flex-col justify-between bg-linear-to-r from-black/70 to-black/90 h-screen relative after:absolute after:top-0 after:h-full after:right-0 after:w-0.5 after:bg-linear-to-b after:from-white/40 after:via-white/30 after:to-transparent">
+        <div className="w-screen max-w-2xl flex flex-col justify-between bg-linear-to-r from-black/70 to-black/90 h-screen relative after:absolute after:top-0 after:h-full after:right-0 md:after:w-0.5 after:bg-linear-to-b after:from-white/40 after:via-white/30 after:to-transparent backdrop-blur-sm">
           <Header />
           <div className="space-y-20">
             <div className="justify-start px-20 text-3xl leading-10">
@@ -41,6 +41,11 @@ function Home() {
               </div>
             </div>
           </div>
+          <img
+            src="/phone.webp"
+            alt="Paicord Mobile Application"
+            className="sm:hidden block max-w-xs mx-auto"
+          />
           <div className="w-full pb-10 flex items-center justify-center text-white gap-2 opacity-80 text-sm">
             <ArrowDown width={18} />
             Features
