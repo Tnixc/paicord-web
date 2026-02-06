@@ -25,12 +25,16 @@
     background: linear-gradient(
       -180deg,
       rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0),
       transparent 40%,
       rgba(0, 0, 0, 0.4) 90%,
       rgba(0, 0, 0, 1) 100%
     );
   }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Frame 14 */
