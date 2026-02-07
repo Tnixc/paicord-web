@@ -40,10 +40,10 @@ function Home() {
               </span>
             </div>
             <div className="px-20">
-              <a id="f1" className="block" href={content.header.download.url}>
+              <a id="f1" href={content.header.download.url}>
                 <div id="f2"></div>
-                <div id="ftext">{content.landing.downloadButton}</div>
                 <div id="f3"></div>
+                <div id="ftext">{content.landing.downloadButton}</div>
               </a>
             </div>
           </div>

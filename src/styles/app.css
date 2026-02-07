@@ -40,6 +40,7 @@ body {
 /* Frame 14 */
 #f1 {
   box-sizing: border-box;
+  display: block;
 
   position: relative;
   width: 136px;
@@ -47,19 +48,21 @@ body {
 
   cursor: pointer;
   background: linear-gradient(0deg, #ddeefb -15.69%, #b8aeec 127.45%);
-  border-radius: 70px;
+  /* border-radius: 70px; */
   transition: 120ms ease-out;
   &:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px #ddeefb44;
   }
-  overflow: hidden;
+  /* overflow: hidden; */
+  clip-path: inset(0 round 9999px);
   box-shadow: 10px 10px 30px #ddeefb44;
 }
 
 /* Download */
 #ftext {
   position: absolute;
+  z-index: 10;
   width: 76px;
   height: 31px;
   left: 29px;
@@ -92,6 +95,7 @@ body {
 
 /* Frame 15 */
 #f3 {
+  scale: 1.4;
   box-sizing: border-box;
 
   position: absolute;

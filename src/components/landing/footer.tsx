@@ -656,9 +656,9 @@ const SVGComponent = () => (
       >
         <path
           d="M127 153c0-11.046 8.954-20 20-20h177v104H127z"
-          fill="#d9d9d9"
+          fill="#fff"
           style={{
-            fill: "color(display-p3 .851 .851 .851)",
+            fill: "#fff",
             fillOpacity: 1,
           }}
         />
