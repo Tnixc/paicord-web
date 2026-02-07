@@ -980,50 +980,50 @@ export function Footer() {
   return (
     <footer className="w-full flex items-center justify-center py-20 bg-black">
       <div className="-translate-y-22 -translate-x-2" id="x">
-        <div className="inline-flex flex-col justify-start items-start gap-3 tracking-tighter">
+        <div className="inline-flex flex-col justify-start items-start gap-3 tracking-tighter text-black">
           <a
             href={content.footer.issue.url}
-            className="pl-1.5 pr-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+            className="pl-1.5 pr-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
           >
-            <div data-svg-wrapper className="relative">
+            <div data-svg-wrapper className="relative ">
               <CircleDotDashed />
             </div>
-            <div className="justify-start text-black text-2xl font-normal ">
+            <div className="justify-start  text-2xl font-normal ">
               {content.footer.issue.label}
             </div>
           </a>
           <div className="self-stretch inline-flex justify-start items-center gap-3">
             <a
               href={content.footer.sponsor.url}
-              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
             >
               <div data-svg-wrapper className="relative">
                 <HeartHandshake />
               </div>
-              <div className="justify-start text-black text-2xl font-normal ">
+              <div className="justify-start  text-2xl font-normal ">
                 {content.footer.sponsor.label}
               </div>
             </a>
             <a
               href={content.footer.github.url}
-              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
             >
               <div data-svg-wrapper className="relative">
                 <Github />
               </div>
-              <div className="justify-start text-black text-2xl font-normal ">
+              <div className="justify-start  text-2xl font-normal ">
                 {content.footer.github.label}
               </div>
             </a>
           </div>
           <a
             href={content.footer.download.url}
-            className="px-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert transition-colors"
+            className="px-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
           >
             <div data-svg-wrapper className="relative">
               <ArrowDownToLine />
             </div>
-            <div className="justify-start text-black text-2xl font-normal ">
+            <div className="justify-start  text-2xl font-normal ">
               {content.footer.download.label}
             </div>
           </a>
