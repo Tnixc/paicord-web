@@ -96,6 +96,16 @@ body {
   filter: blur(8.5px);
 }
 
+/* Header nav links */
+.nav-link {
+  @apply underline decoration-1 underline-offset-3 transition-all ease-in-out hover:underline-offset-6;
+}
+
+/* Footer action buttons */
+.footer-btn {
+  @apply inline-flex items-center justify-center gap-1 overflow-hidden rounded-full bg-white px-2.5 py-0.5 outline-0 outline-neutral-500 transition-all duration-200 ease-out hover:outline-2 hover:invert;
+}
+
 /* Footer anchor for positioning */
 #footer-anchor {
   anchor-name: --footer;

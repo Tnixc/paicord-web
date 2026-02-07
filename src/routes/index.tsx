@@ -21,20 +21,16 @@ function Home() {
           <Header />
           <div className="space-y-20">
             <div className="justify-start px-20 text-3xl leading-10">
-              <span className="text-white">{content.landing.title}</span>
+              <span>{content.landing.title}</span>
               <span className="font-extralight text-white/80">
                 {" "}
                 {content.landing.description.part1}
               </span>
-              <span className="text-white">
-                {content.landing.description.highlight1}
-              </span>
+              <span>{content.landing.description.highlight1}</span>
               <span className="font-extralight text-white/80">
                 {content.landing.description.part2}
               </span>
-              <span className="text-white">
-                {content.landing.description.highlight2}
-              </span>
+              <span>{content.landing.description.highlight2}</span>
               <span className="font-extralight text-white/80">
                 {content.landing.description.part3}
               </span>
