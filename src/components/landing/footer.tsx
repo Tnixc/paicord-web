@@ -14,7 +14,10 @@ const SVGComponent = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="min-w-[1221px]"
+    role="img"
+    aria-label="Decorative footer background pattern"
   >
+    <title>Decorative footer background pattern</title>
     <mask
       id="a"
       style={{
@@ -327,7 +330,7 @@ const SVGComponent = () => (
       </g>
       <path
         d="M457.275 145.308q0-.494.23-.874.219-.39.609-.609.38-.23.874-.23h6.487q.494 0 .874.23.39.219.609.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.609.609 1.7 1.7 0 0 1-.874.219h-6.487q-.494 0-.874-.219a1.66 1.66 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm6.458 0q0-.494.23-.874a1.55 1.55 0 0 1 .609-.609q.38-.23.874-.23h6.486q.495 0 .874.23.391.219.61.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.61.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.65 1.65 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm6.457 0q0-.494.23-.874a1.56 1.56 0 0 1 .61-.609q.38-.23.874-.23h6.486q.494 0 .874.23.39.219.609.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.609.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.66 1.66 0 0 1-.61-.609 1.7 1.7 0 0 1-.23-.886zm6.458 0q0-.494.23-.874a1.55 1.55 0 0 1 .609-.609q.38-.23.874-.23h3.312q.495 0 .874.23.391.219.61.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.61.609 1.7 1.7 0 0 1-.874.219h-3.312q-.495 0-.874-.219a1.65 1.65 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm3.29 0q0-.494.23-.874a1.56 1.56 0 0 1 .61-.609q.38-.23.874-.23h6.486q.494 0 .874.23.39.219.609.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.609.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.66 1.66 0 0 1-.61-.609 1.7 1.7 0 0 1-.23-.886zm20.249 0q0-.494.23-.874a1.55 1.55 0 0 1 .609-.609q.38-.23.874-.23h6.486q.495 0 .874.23.391.219.61.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.61.609 1.7 1.7 0 0 1-.874.219H501.9q-.495 0-.874-.219a1.65 1.65 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm6.457 0q0-.494.23-.874a1.56 1.56 0 0 1 .61-.609q.38-.23.874-.23h6.486q.494 0 .874.23.39.219.609.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.609.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.66 1.66 0 0 1-.61-.609 1.7 1.7 0 0 1-.23-.886zm6.458 0q0-.494.23-.874a1.55 1.55 0 0 1 .609-.609q.38-.23.874-.23h6.486q.495 0 .874.23.391.219.61.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.61.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.65 1.65 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm13.353 0q0-.494.23-.874.218-.39.609-.609.38-.23.874-.23h3.312q.495 0 .874.23.391.219.61.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.61.609 1.7 1.7 0 0 1-.874.219h-3.312q-.494 0-.874-.219a1.66 1.66 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm10.186 0q0-.494.23-.874.218-.39.609-.609.38-.23.874-.23h6.486q.495 0 .874.23.391.219.61.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.61.609 1.7 1.7 0 0 1-.874.219h-6.486q-.494 0-.874-.219a1.66 1.66 0 0 1-.609-.609 1.7 1.7 0 0 1-.23-.886zm6.457 0q0-.494.23-.874a1.56 1.56 0 0 1 .61-.609q.38-.23.874-.23h6.486q.494 0 .874.23.39.219.609.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.609.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.66 1.66 0 0 1-.61-.609 1.7 1.7 0 0 1-.23-.886zm13.353 0q0-.494.23-.874a1.56 1.56 0 0 1 .61-.609q.38-.23.874-.23h6.486q.494 0 .874.23.39.219.609.609.23.38.23.874v.023q0 .495-.23.886a1.66 1.66 0 0 1-.609.609 1.7 1.7 0 0 1-.874.219h-6.486q-.495 0-.874-.219a1.66 1.66 0 0 1-.61-.609 1.7 1.7 0 0 1-.23-.886z"
-        id="anchor"
+        id="footer-anchor"
         fill="#fff"
         style={{
           fill: "#fff",
@@ -978,52 +981,52 @@ export default SVGComponent;
 
 export function Footer() {
   return (
-    <footer className="w-full flex items-center justify-center py-20 bg-black">
-      <div className="-translate-y-22 -translate-x-2" id="x">
-        <div className="inline-flex flex-col justify-start items-start gap-3 tracking-tighter text-black">
+    <footer className="flex w-full items-center justify-center bg-black py-20">
+      <div className="-translate-x-2 -translate-y-22" id="footer-positioned">
+        <div className="inline-flex flex-col items-start justify-start gap-3 text-black tracking-tighter">
           <a
             href={content.footer.issue.url}
-            className="pl-1.5 pr-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
+            className="inline-flex items-center justify-center gap-1 overflow-hidden rounded-full bg-white py-0.5 pr-2.5 pl-1.5 outline-0 outline-neutral-500 transition-all duration-200 ease-out hover:outline-2 hover:invert"
           >
-            <div data-svg-wrapper className="relative ">
+            <div data-svg-wrapper className="relative">
               <CircleDotDashed />
             </div>
-            <div className="justify-start  text-2xl font-normal ">
+            <div className="justify-start font-normal text-2xl">
               {content.footer.issue.label}
             </div>
           </a>
-          <div className="self-stretch inline-flex justify-start items-center gap-3">
+          <div className="inline-flex items-center justify-start gap-3 self-stretch">
             <a
               href={content.footer.sponsor.url}
-              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
+              className="flex items-center justify-center gap-1 overflow-hidden rounded-full bg-white px-2.5 py-0.5 outline-0 outline-neutral-500 transition-all duration-200 ease-out hover:outline-2 hover:invert"
             >
               <div data-svg-wrapper className="relative">
                 <HeartHandshake />
               </div>
-              <div className="justify-start  text-2xl font-normal ">
+              <div className="justify-start font-normal text-2xl">
                 {content.footer.sponsor.label}
               </div>
             </a>
             <a
               href={content.footer.github.url}
-              className="px-2.5 py-0.5 bg-white rounded-full flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
+              className="flex items-center justify-center gap-1 overflow-hidden rounded-full bg-white px-2.5 py-0.5 outline-0 outline-neutral-500 transition-all duration-200 ease-out hover:outline-2 hover:invert"
             >
               <div data-svg-wrapper className="relative">
                 <Github />
               </div>
-              <div className="justify-start  text-2xl font-normal ">
+              <div className="justify-start font-normal text-2xl">
                 {content.footer.github.label}
               </div>
             </a>
           </div>
           <a
             href={content.footer.download.url}
-            className="px-2.5 py-0.5 bg-white rounded-full inline-flex justify-center items-center gap-1 overflow-hidden hover:invert outline-0 hover:outline-2 outline-neutral-500 transition-all ease-out duration-200"
+            className="inline-flex items-center justify-center gap-1 overflow-hidden rounded-full bg-white px-2.5 py-0.5 outline-0 outline-neutral-500 transition-all duration-200 ease-out hover:outline-2 hover:invert"
           >
             <div data-svg-wrapper className="relative">
               <ArrowDownToLine />
             </div>
-            <div className="justify-start  text-2xl font-normal ">
+            <div className="justify-start font-normal text-2xl">
               {content.footer.download.label}
             </div>
           </a>

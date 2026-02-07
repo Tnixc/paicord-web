@@ -46,7 +46,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className="flex flex-col min-h-screen bg-black">
+      <body className="flex min-h-screen flex-col bg-black">
         <RootProvider search={{ SearchDialog }}>{children}</RootProvider>
         <Scripts />
       </body>
