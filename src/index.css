@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PPLX Sans";
+  src: url("/PPLX-Sans-Beta-v1-VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "PPLX Sans", system-ui, sans-serif;
+  --color-blue: #0c5eff;
+  --color-gray: #efefef;
+  --color-pink: #fddaff;
+  --color-dark: #222222;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
