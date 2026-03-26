@@ -92,16 +92,10 @@ export default function App() {
         {/* Content */}
         <div className="flex min-h-0 flex-1 flex-col gap-1 self-stretch lg:flex-row">
           {/* Left column */}
-          <div className="flex shrink-0 flex-col gap-1 lg:h-screen lg:w-1/4">
+          <div className="flex shrink-0 flex-col gap-1 lg:h-screen lg:w-1/3">
             {/* Hero */}
             <div className="relative flex min-h-[360px] items-center justify-center overflow-clip px-6 py-12 lg:h-full lg:py-16">
-              <div
-                className="absolute inset-0"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(180deg, transparent 73%, rgba(60,80,200,0.5) 100%)",
-                }}
-              />
+              <div className="absolute bottom-0 w-full h-20 bg-linear-to-t from-blue to-transparent opacity-60" />
               <HalftoneDots
                 contrast={0.3}
                 originalColors={false}
@@ -110,13 +104,13 @@ export default function App() {
                 radius={1.25}
                 size={0.5}
                 scale={1}
-                image="/hero-bg-top.jpg"
+                image="/hero-bg-top.webp"
                 grainMixer={0.2}
                 grainOverlay={0.2}
                 grainSize={0.5}
                 type="gooey"
                 fit="cover"
-                colorFront="#AFAFAF"
+                colorFront="#AFAFAF60"
                 colorBack="#00000000"
                 className="absolute inset-0 fade-in"
               />
@@ -139,13 +133,7 @@ export default function App() {
 
             {/* Features */}
             <div className="relative flex min-h-[300px] shrink-0 items-center justify-center overflow-clip px-6 py-12 lg:h-1/2 lg:py-16">
-              <div
-                className="absolute inset-0"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(180deg, rgba(60,80,200,0.5) 0%, transparent 27%)",
-                }}
-              />
+              <div className="absolute top-0 w-full h-20 bg-linear-to-b from-blue to-transparent opacity-60" />
               <HalftoneDots
                 contrast={0.3}
                 originalColors={false}
@@ -154,13 +142,13 @@ export default function App() {
                 radius={1.25}
                 size={0.5}
                 scale={1}
-                image="/hero-bg-bottom.jpg"
+                image="/hero-bg-bottom.webp"
                 grainMixer={0.2}
                 grainOverlay={0.2}
                 grainSize={0.5}
                 type="gooey"
                 fit="cover"
-                colorFront="#AFAFAF80"
+                colorFront="#AFAFAF60"
                 colorBack="#00000000"
                 className="absolute inset-0  fade-in"
               />
@@ -184,22 +172,22 @@ export default function App() {
               type="8x8"
               size={2}
               colorSteps={3}
-              image="/dither-bg.jpg"
+              image="/dither-bg.webp"
               scale={1}
               fit="cover"
               colorFront="#00000000"
               colorHighlight="#00000000"
               colorBack="#00000000"
-              className="absolute inset-0 bg-black mix-blend-hard-light animation-delay-1500 fade-in"
+              className="absolute inset-0 mix-blend-hard-light animation-delay-1500 fade-in"
             />
             <CornerCuts />
             <img
-              src="/screenshot-desktop.png"
+              src="/screenshot-desktop.webp"
               alt="Paicord desktop screenshot"
               className="absolute left-1/2 top-[8%] w-[94%] max-w-[925px] -translate-x-1/2 lg:left-[177px] lg:top-[37px] lg:w-[925px] lg:translate-x-0"
             />
             <img
-              src="/screenshot-mobile.png"
+              src="/screenshot-mobile.webp"
               alt="Paicord mobile screenshot"
               className="absolute bottom-[4%] left-[6%] w-[35%] min-w-[120px] max-w-[254px] lg:bottom-auto lg:left-[50px] lg:top-[235px] lg:w-[254px]"
             />
