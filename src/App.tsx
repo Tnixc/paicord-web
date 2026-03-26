@@ -42,10 +42,10 @@ function NavPill({
 
 export default function App() {
   return (
-    <div className="relative h-screen w-screen overflow-clip bg-white antialiased">
-      <div className="absolute inset-0 flex flex-col items-start gap-1 p-1">
+    <div className="relative min-h-screen w-screen overflow-x-clip bg-white antialiased lg:h-screen lg:overflow-clip">
+      <div className="flex min-h-screen flex-col items-start gap-1 p-1 lg:absolute lg:inset-0 lg:min-h-0">
         {/* Nav */}
-        <nav className="flex items-start gap-1 self-stretch">
+        <nav className="flex flex-wrap items-start gap-1 self-stretch lg:flex-nowrap">
           <NavPill>
             <span className="shrink-0 text-[17px]/8 text-dark">Paicord</span>
           </NavPill>
@@ -90,11 +90,11 @@ export default function App() {
         </nav>
 
         {/* Content */}
-        <div className="flex min-h-0 flex-1 gap-1 self-stretch">
+        <div className="flex min-h-0 flex-1 flex-col gap-1 self-stretch lg:flex-row">
           {/* Left column */}
-          <div className="flex w-1/4 shrink-0 flex-col gap-1 h-screen">
+          <div className="flex shrink-0 flex-col gap-1 lg:h-screen lg:w-1/4">
             {/* Hero */}
-            <div className="relative flex items-center justify-center overflow-clip px-6 py-16 h-full">
+            <div className="relative flex min-h-[360px] items-center justify-center overflow-clip px-6 py-12 lg:h-full lg:py-16">
               <div
                 className="absolute inset-0"
                 style={{
@@ -120,9 +120,9 @@ export default function App() {
                 colorBack="#00000000"
                 className="absolute inset-0 fade-in"
               />
-              <div className="relative w-[363px] shrink-0 p-4">
-                <h1 className="text-5xl/8 text-dark">Paicord</h1>
-                <p className="mt-16 text-[32px]/8 font-light text-dark">
+              <div className="relative w-full max-w-[363px] shrink-0 p-4">
+                <h1 className="text-4xl/8 text-dark sm:text-5xl/8">Paicord</h1>
+                <p className="mt-10 text-[24px]/7 font-light text-dark sm:mt-16 sm:text-[32px]/8">
                   a brand new open source, cross-platform, native discord client written in SwiftUI
                 </p>
               </div>
@@ -130,7 +130,7 @@ export default function App() {
             </div>
 
             {/* Download button */}
-            <div className="relative flex flex-1 items-center justify-center overflow-clip bg-blue px-6 max-h-fit">
+            <div className="relative flex min-h-16 items-center justify-center overflow-clip bg-blue px-6">
               <CornerCuts />
               <span className="shrink-0 text-[17px]/8 font-medium text-white">
                 {">>> Download for macOS"}
@@ -138,7 +138,7 @@ export default function App() {
             </div>
 
             {/* Features */}
-            <div className="relative flex h-1/2 shrink-0 items-center justify-center overflow-clip px-6 py-16">
+            <div className="relative flex min-h-[300px] shrink-0 items-center justify-center overflow-clip px-6 py-12 lg:h-1/2 lg:py-16">
               <div
                 className="absolute inset-0"
                 style={{
@@ -164,7 +164,7 @@ export default function App() {
                 colorBack="#00000000"
                 className="absolute inset-0  fade-in"
               />
-              <div className="relative w-[363px] shrink-0 p-4">
+              <div className="relative w-full max-w-[363px] shrink-0 p-4">
                 <p className="text-[32px]/8 font-light text-dark">
                   Available on macOS, iOS, and iPadOS
                   <br />
@@ -177,7 +177,7 @@ export default function App() {
           </div>
 
           {/* Right column — screenshots */}
-          <div className="relative flex-1 self-stretch overflow-clip bg-gray">
+          <div className="relative h-[clamp(360px,95vw,620px)] self-stretch overflow-clip bg-gray lg:h-auto lg:min-h-0 lg:flex-1">
             <ImageDithering
               originalColors
               inverted={false}
@@ -196,12 +196,12 @@ export default function App() {
             <img
               src="/screenshot-desktop.png"
               alt="Paicord desktop screenshot"
-              className="absolute left-[177px] top-[37px] w-[925px]"
+              className="absolute left-1/2 top-[8%] w-[94%] max-w-[925px] -translate-x-1/2 lg:left-[177px] lg:top-[37px] lg:w-[925px] lg:translate-x-0"
             />
             <img
               src="/screenshot-mobile.png"
               alt="Paicord mobile screenshot"
-              className="absolute left-[50px] top-[235px] w-[254px]"
+              className="absolute bottom-[4%] left-[6%] w-[35%] min-w-[120px] max-w-[254px] lg:bottom-auto lg:left-[50px] lg:top-[235px] lg:w-[254px]"
             />
           </div>
         </div>
