@@ -26,6 +26,41 @@
   opacity: 0;
 }
 
+.interactive-control {
+  transition:
+    transform 150ms ease,
+    filter 150ms ease,
+    opacity 150ms ease;
+}
+
+.interactive-control:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-blue) 60%, white);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .interactive-control:hover {
+    transform: scale(0.955);
+    filter: brightness(1.1);
+  }
+
+  .interactive-control:active {
+    transform: scale(0.985);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interactive-control {
+    transition: none;
+  }
+
+  .interactive-control:hover,
+  .interactive-control:active {
+    transform: none;
+    filter: none;
+  }
+}
+
 body {
   margin: 0;
   background: white;

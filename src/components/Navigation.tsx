@@ -46,7 +46,12 @@ export function Navigation() {
         <span className="shrink-0 text-[17px]/8 text-dark">Paicord</span>
       </NavPill>
 
-      <a href={GITHUB_REPO_URL} target="_blank" rel="noreferrer" className="no-underline">
+      <a
+        href={GITHUB_REPO_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="interactive-control no-underline"
+      >
         <NavPill>
           <div className="flex items-center gap-0 px-1">
             <span className="shrink-0 text-[17px]/8 text-dark">
@@ -66,7 +71,12 @@ export function Navigation() {
         </NavPill>
       </a>
 
-      <a href={SPONSOR_URL} target="_blank" rel="noreferrer" className="no-underline">
+      <a
+        href={SPONSOR_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="interactive-control no-underline"
+      >
         <NavPill className="bg-pink">
           <div className="flex items-center gap-1">
             <svg
@@ -86,7 +96,12 @@ export function Navigation() {
 
       <NavPill className="h-8 flex-1 bg-gray" />
 
-      <a href={NIGHTLY_MACOS_URL} target="_blank" rel="noreferrer" className="no-underline">
+      <a
+        href={NIGHTLY_MACOS_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="interactive-control no-underline"
+      >
         <NavPill className="bg-blue">
           <span className="shrink-0 text-[17px]/8 font-medium text-white">{">>> Download"}</span>
         </NavPill>
