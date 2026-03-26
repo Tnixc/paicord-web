@@ -16,7 +16,9 @@ export function Navigation() {
 
     const loadStars = async () => {
       try {
-        const response = await fetch(GITHUB_API_REPO_URL, { signal: controller.signal });
+        const response = await fetch(GITHUB_API_REPO_URL, {
+          signal: controller.signal,
+        });
         if (!response.ok) return;
 
         const data: unknown = await response.json();
@@ -94,7 +96,7 @@ export function Navigation() {
         </NavPill>
       </a>
 
-      <NavPill className="h-8 flex-1 bg-gray" />
+      <span className="flex-1 bg-transparent"></span>
 
       <a
         href={NIGHTLY_MACOS_URL}

@@ -4,7 +4,7 @@ import { CornerCuts } from "./CornerCuts";
 
 export function FeaturesSection() {
   return (
-    <div className="relative flex min-h-[300px] shrink-0 items-center justify-center overflow-clip px-6 py-12 lg:h-1/2 lg:py-16">
+    <div className="relative flex min-h-[300px] shrink-0 items-center justify-center overflow-clip px-6 py-12 lg:h-1/2 lg:py-16 bg-white">
       <div className="absolute top-0 h-20 w-full bg-linear-to-b from-blue to-transparent opacity-60" />
       <HalftoneDots
         contrast={0.3}
@@ -24,12 +24,12 @@ export function FeaturesSection() {
         colorBack="#00000000"
         className="absolute inset-0  fade-in"
       />
-      <div className="relative w-full max-w-[363px] shrink-0 p-4">
+      <div className="relative w-full shrink-0 p-4">
         <p className="text-[32px]/8 font-light text-dark">
           Available on macOS, iOS, and iPadOS
           <br />
           <br />
-          Feature complete. Voice support.
+          Feature complete <sup>soon*</sup>. Voice support.
         </p>
       </div>
       <CornerCuts />
