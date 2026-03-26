@@ -15,6 +15,17 @@
   --color-dark: #222222;
 }
 
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 2s ease-out forwards 0.2s;
+  opacity: 0;
+}
+
 body {
   margin: 0;
   background: white;

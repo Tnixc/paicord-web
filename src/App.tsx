@@ -5,19 +5,19 @@ function CornerCuts() {
     <>
       <div
         className="absolute left-0 top-0 origin-top-left size-2.5 bg-white"
-        style={{ rotate: "45deg", translate: "0.013px -7px" }}
+        style={{ rotate: "45deg", translate: "0px -7px" }}
       />
       <div
         className="absolute right-0 bottom-0 origin-top-left size-2.5 bg-white"
-        style={{ rotate: "45deg", translate: "10.029px 3px" }}
+        style={{ rotate: "45deg", translate: "10px 3px" }}
       />
       <div
         className="absolute bottom-0 left-0 origin-top-left size-2.5 bg-white"
-        style={{ rotate: "45deg", translate: "0.013px 3.012px" }}
+        style={{ rotate: "45deg", translate: "0px 3px" }}
       />
       <div
         className="absolute top-0 right-0 origin-top-left size-2.5 bg-white"
-        style={{ rotate: "45deg", translate: "10.029px -7px" }}
+        style={{ rotate: "45deg", translate: "10px -7px" }}
       />
     </>
   );
@@ -118,7 +118,7 @@ export default function App() {
                 fit="cover"
                 colorFront="#AFAFAF"
                 colorBack="#00000000"
-                className="absolute inset-0"
+                className="absolute inset-0 fade-in"
               />
               <div className="relative w-[363px] shrink-0 p-4">
                 <h1 className="text-5xl/8 text-dark">Paicord</h1>
@@ -162,7 +162,7 @@ export default function App() {
                 fit="cover"
                 colorFront="#AFAFAF80"
                 colorBack="#00000000"
-                className="absolute inset-0"
+                className="absolute inset-0  fade-in"
               />
               <div className="relative w-[363px] shrink-0 p-4">
                 <p className="text-[32px]/8 font-light text-dark">
@@ -190,7 +190,7 @@ export default function App() {
               colorFront="#00000000"
               colorHighlight="#00000000"
               colorBack="#00000000"
-              className="absolute inset-0 bg-black mix-blend-hard-light"
+              className="absolute inset-0 bg-black mix-blend-hard-light animation-delay-1500 fade-in"
             />
             <CornerCuts />
             <img
